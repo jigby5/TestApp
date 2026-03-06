@@ -15,7 +15,7 @@ const bandNames = [
     name: 'Led Zeppelin',
     members: 'Robert Plant, Jimmy Page',
     formed: 1969,
-  }
+  },
 ];
 
 function Welcome() {
@@ -45,11 +45,9 @@ function Band({
 function BandList() {
   return (
     <>
-    {
-      bandNames.map((singleBand) => (
-        <Band {...singleBand}/> 
-      ))
-    }
+      {bandNames.map((singleBand) => (
+        <Band {...singleBand} />
+      ))}
     </>
   );
 }
